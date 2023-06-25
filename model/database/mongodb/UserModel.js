@@ -2,7 +2,7 @@ const Mongoose = require('mongoose')
 const Schema = Mongoose.Schema;
 
 const UserModel = new Schema({
-    email: {
+    emailId: {
         type: String,
         unique: true,
         required: true
