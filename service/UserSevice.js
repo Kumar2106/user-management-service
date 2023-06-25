@@ -1,5 +1,5 @@
 const UserModel = require('../../model/database/mongodb/UserModel')
-const name = "kumar"
+const name = "kumar Aditya"
 
 const getAllUsers = async () => {
     console.log("Fetching all the user from collection")
