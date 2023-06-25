@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express();
+const HealthRouter = require('./router/HealthRouter')
 
-app.get('/',(req,res)=>{
-    res.send("Everything is up and running")
-        .end()
-})
+const port = process.env.port || 5000
 
+app.use('/health',HealthRouter)
 
-app.listen(5000, ()=> console.log("Service started on 5000"))
+app.listen(port, ()=> console.log(`Service started on ${port}`))
