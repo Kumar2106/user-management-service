@@ -1,3 +1,4 @@
+//TODO: use emailId as the primary key
 //TODO: Segregate user repo layer from user service layer
 //TODO: Make changes in the code base so that it take minimum changes to migrate from mongoDB to other db.(programming to interface)
 //TODO: Introduce caching technique in the service.
